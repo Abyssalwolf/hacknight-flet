@@ -5,10 +5,10 @@
 #  WORD VALIDITY CHECKER
 This project aims to develop a software tool that can validate the correctness of words or strings according to a specified set of rules or a dictionary. The checker will help ensure that words are correctly spelled, grammatically correct,properly formatted, and adhere to specific linguistic or domain-specific guidelines.
 ## Team members
-1. [Sebin Thomas](https://github.com/Abyssalwolf)
-2. [Durga Sumesh](https://github.com/aaagrud)
-3. [Devi Dekshina](https://github.com/ddekshina)
-4. [Nandana S](https://github.com/CaptainSparrow2003)
+1. [Sebin Thomas] (https://github.com/Abyssalwolf)
+2. [Durga Sumesh] (https://github.com/aaagrud)
+3. [Devi Dekshina] (https://github.com/ddekshina)
+4. [Nandana S] (https://github.com/CaptainSparrow2003)
 ## Link to product walkthrough
 [link to video](Link Here)
 ## How it Works ?
