@@ -15,12 +15,9 @@ This project aims to develop a software tool that can validate the correctness o
 1.To check the validity of a word, enter the word in the text box and click "Check." The system converts all the letters to their lowercase form and then checks if the word exists by comparing it with a list of approximately 70,000 words in the backend. If the word exists, the result will be "Valid word!" If it doesn't exist, the result will be "Invalid word!"
 2. Embed video of project demo
 ## Libraries used
-   sys - Version
-   
-   os - Version
-   
-   flet - Version
-## How to configure
-Instructions for setting up project
+   sys, os, flet
 ## How to Run
-Instructions for running
+Install flet with: 
+pip install flet
+
+Run Code
