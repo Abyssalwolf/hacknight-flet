@@ -11,7 +11,7 @@ def main(page: ft.Page):
     def check_valid(e):
         if word.value.lower() not in word_list:
             check_result.value = "Invalid word!"
-            check_result.color = "red"
+            check_result.color = "#850d20"
             page.update()
         if word.value.lower() in word_list:
             check_result.value = "Valid word!"
@@ -46,12 +46,12 @@ def main(page: ft.Page):
             alignment='center',
             expand=True,
             controls=[
-                ft.Text(value = "IS YOUR WORD VALID?",size=40,weight=ft.FontWeight.W_100, font_family="Verdana"),
-                ft.Text(value = "Fighting over a word your friend suggested in a game but don't know for sure? Enter it here and you'll figure it out for sure!", style=ft.TextThemeStyle.BODY_LARGE, font_family="Verdana"),
+                ft.Text(value = "IS YOUR WORD VALID?",size=40,weight=ft.FontWeight.W_100, font_family="Verdana", color='black'),
+                ft.Text(value = "Fighting over a word your friend suggested in a game but don't know for sure? Enter it here and you'll figure it out for sure!", size=18, font_family="Verdana", weight=ft.FontWeight.W_600 ,color='black'),
                 ft.Row(
                     controls=[
                         word,
-                        ft.ElevatedButton("Check", icon=ft.icons.CHECK_ROUNDED, icon_color='#9f59d9' ,on_click = check_valid),
+                        ft.ElevatedButton("Check", icon=ft.icons.CHECK_ROUNDED, icon_color='#2ba160' ,on_click = check_valid),
                     ],
                 ),
                 tasks_view,
