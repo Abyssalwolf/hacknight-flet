@@ -7,18 +7,18 @@ word_list = [i for i in f.read().split()]
 def main(page: ft.Page):
     page.title = "Word Validity"
 
-    check_result = ft.Text(value = "", color= "")
+    check_result = ft.Text(value = "", color= "",style=ft.TextThemeStyle.HEADLINE_LARGE, font_family="Verdana")
     def check_valid(e):
         if word.value.lower() not in word_list:
-            check_result.value = "invalid word!"
+            check_result.value = "Invalid word!"
             check_result.color = "red"
             page.update()
         if word.value.lower() in word_list:
-            check_result.value = "valid word!"
+            check_result.value = "Valid word!"
             check_result.color = "green"
             page.update()
 
-    word = ft.TextField(hint_text="Enter your word", expand=True)
+    word = ft.TextField(hint_text="Enter your word", expand=True, on_submit=check_valid)
     tasks_view = ft.Column()
 
     page.horizontal_alignment = ft.CrossAxisAlignment.CENTER
@@ -43,14 +43,15 @@ def main(page: ft.Page):
         ),
         padding=30,
         content=ft.Column(
+            alignment='center',
             expand=True,
             controls=[
-                ft.Text(value = "IS YOUR WORD VALID?",size=40,weight=ft.FontWeight.W_100),
-                ft.Text(value = "Fighting over a word your friend suggested in a game but don't know for sure? Enter it here and you'll figure it out for sure!"),
+                ft.Text(value = "IS YOUR WORD VALID?",size=40,weight=ft.FontWeight.W_100, font_family="Verdana"),
+                ft.Text(value = "Fighting over a word your friend suggested in a game but don't know for sure? Enter it here and you'll figure it out for sure!", style=ft.TextThemeStyle.BODY_LARGE, font_family="Verdana"),
                 ft.Row(
                     controls=[
                         word,
-                        ft.ElevatedButton("Check", on_click = check_valid),
+                        ft.ElevatedButton("Check", icon=ft.icons.CHECK_ROUNDED, icon_color='#9f59d9' ,on_click = check_valid),
                     ],
                 ),
                 tasks_view,
@@ -59,7 +60,8 @@ def main(page: ft.Page):
         ),
     )
     _main_container.content.horizontal_alignment = ft.CrossAxisAlignment.CENTER
-    
+    _main_container.content.vertical_alignment = ft.CrossAxisAlignment.CENTER
+
 
     page.add(_main_container)
     page.update()
