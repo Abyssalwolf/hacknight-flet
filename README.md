@@ -16,7 +16,9 @@ This project aims to develop a software tool that can validate the correctness o
 2. Embed video of project demo
 ## Libraries used
    sys - Version
+   
    os - Version
+   
    flet - Version
 ## How to configure
 Instructions for setting up project
