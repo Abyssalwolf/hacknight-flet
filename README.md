@@ -19,7 +19,6 @@ This project aims to develop a software tool that can validate the correctness o
    os
    flet -- 0.10.3
 ## How to Run
-Install flet with: 
-pip install felt\n
-Download the repository from the github repo page\n
-Run Python Code
+1. Install flet with: 'pip install flet'
+2.Download the repository from the github repo page
+3.Run Python Code
