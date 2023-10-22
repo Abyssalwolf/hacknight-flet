@@ -10,7 +10,11 @@ This project aims to develop a software tool that can validate the correctness o
 3. Devi Dekshina (https://github.com/ddekshina)
 4. Nandana S (https://github.com/CaptainSparrow2003)
 ## Link to product walkthrough
-[link to video](Link Here)
+
+
+https://github.com/Abyssalwolf/hacknight-flet/assets/117766338/552af493-5970-49e3-88c5-47297cea3fe9
+
+
 ## How it Works ?
 1.To check the validity of a word, enter the word in the text box and click "Check." The system converts all the letters to their lowercase form and then checks if the word exists by comparing it with a list of approximately 70,000 words in the backend. If the word exists, the result will be "Valid word!" If it doesn't exist, the result will be "Invalid word!"
 ## Python Libraries used
