@@ -20,8 +20,11 @@ To check the validity of a word, enter the word in the text box and click "Check
 ## Python Libraries used
 1. sys
 2. os
-3. flet -- 0.10.3   
+3. flet -- 0.10.3
+## How to configure
+1. Install Python
+2. Install flet using `pip install flet`
+3. Download the repository
 ## How to Run
-1. Install flet with: 'pip install flet'
-2. Download the repository from the github repo page
-3. Run Python Code
+1. Navigate to the repo
+2. Run the code word_validity.py
