@@ -20,6 +20,6 @@ This project aims to develop a software tool that can validate the correctness o
    flet -- 0.10.3
 ## How to Run
 Install flet with: 
-pip install felt
-Download the repository from the github repo page
+pip install felt\n
+Download the repository from the github repo page\n
 Run Python Code
